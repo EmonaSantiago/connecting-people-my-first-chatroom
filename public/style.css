@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+
+  main {
+    background-color: #f5b9fd;
+  }
+  
+  #header {
+      background-color: rgb(194, 149, 194);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  #chatroom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+   
+  }
