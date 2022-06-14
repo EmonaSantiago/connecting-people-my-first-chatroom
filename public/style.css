@@ -1,25 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: cursive;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-  main {
-    background-color: #f5b9fd;
-  }
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.whatspaper.com/wp-content/uploads/2021/10/hot-pink-aesthetic-wallpaper-whatspaper-3.jpg");
   
-  #header {
-      background-color: rgb(194, 149, 194);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+}
 
-  #chatroom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rebeccapurple;
-   
-  }
+section {
+  width: 40em;
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 1em;
+}
+
+section h1 {
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(243, 181, 243);
+}
+
+section ul {
+  margin: 0;
+  padding: 0.2em;
+  list-style-type: none;
+  flex-grow: 2;
+  width: 20rem;
+  overflow-y: scroll;
+}
+
+
+section form {
+  padding: 0;
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+}
+
+section form input[type='text'] {
+  margin: 0;
+  padding: 0 1rem;
+  border: none;
+  height: 2rem;
+  flex-grow: 2;
+  background: rgb(238, 177, 240);
+  box-shadow: inset 0.2rem 0.2rem 0.3rem 0 rgba(209, 205, 199, 0.5);
+  border-radius: 2rem;
+  border: 0;
+  outline: none;
+}
+
+section div:last-child {
+  border-top: pink;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5em;
+}
+
+
+.send-button {
+  transition: 0.5s;
+  margin-left: 1em;
+  margin-bottom: 5em;
+}
+
+.send-button:hover {
+  transform: scale(150%);
+}
