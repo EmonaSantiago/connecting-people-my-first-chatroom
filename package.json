@@ -2,7 +2,7 @@
   "name": "connecting-people-my-first-chatroom",
   "version": "1.0.0",
   "description": "> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "doc": "docs"
   },
@@ -10,14 +10,22 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
+    "start": "node server.js",
     "type": "git",
     "url": "git+https://github.com/EmonaSantiago/connecting-people-my-first-chatroom.git"
   },
-  "keywords": [],
+  "keywords": [
+    "express",
+    "socket.io"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EmonaSantiago/connecting-people-my-first-chatroom/issues"
   },
-  "homepage": "https://github.com/EmonaSantiago/connecting-people-my-first-chatroom#readme"
+  "homepage": "https://github.com/EmonaSantiago/connecting-people-my-first-chatroom#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.5.1"
+  }
 }

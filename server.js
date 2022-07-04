@@ -1,15 +1,12 @@
-const { response } = require('express')
+/*
+https://socket.io/get-started/chat
+*/
 const express = require('express')
-const { request } = require('http')
 const app = express()
 const http = require('http').createServer(app)
 const path = require('path')
 const io = require('socket.io')(http)
-const port = process.env.PORT || 1337
-
-app.get('/', (request,Response) => {
-    Response.send('welcome to the Chatroom!');
-})
+const port = process.env.PORT || 4242
 
 app.use(express.static(path.resolve('public')))
 
@@ -25,5 +22,6 @@ io.on('connection', (socket) => {
   })
 })
 
-const port = process.env.PORT || '5000';
-app.listen(port,() => console.log('server started on port {port}'))
+http.listen(port, () => {
+  console.log('listening on port ', port)
+})
