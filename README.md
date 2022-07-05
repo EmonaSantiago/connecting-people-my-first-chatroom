@@ -1,7 +1,7 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# FIRST CHATROOM
+Mijn eerste Chatroom volgens de OBA styleguide. Erg simpel! Een chat om te praten over algemene boeken. Een realtime web app!
 
 ## Inhoudsopgave
 
@@ -13,18 +13,30 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+<img width="1440" alt="Schermafbeelding 2022-07-05 om 19 50 35" src="https://user-images.githubusercontent.com/90447045/177390470-49525a35-bf19-4cd9-9b51-0361163ad474.png">
 
-## Installatie
+## Kenmerken/Installatie
+🟣 Express
+🟢 Socket.io
+🔴 Heroku
 
 ## Gebruik
+De Chat is erg simpel te gebruiken. Type iets... en druk op verzenden. 
+
+### Een eerdere gemaakte chat 
+Een chat met eigen ontwerp
+
+<img width="953" alt="Schermafbeelding 2022-07-04 om 16 21 57" src="https://user-images.githubusercontent.com/90447045/177174002-c489c864-f5ad-4dfb-8422-293eda7f1400.png">
+
+Ook nog gebouwd, maar helaas moest ik een styleguide gebruiken van een opdrachtgever.
+
+<img width="500" alt="Schermafbeelding 2022-07-04 om 18 46 05" src="https://user-images.githubusercontent.com/90447045/177194349-ec923230-15f6-4bfb-bdf0-832b0b2b283f.png">
 
 ## Bronnen
+https://expressjs.com/en/4x/api.html
+https://socket.io/
+https://www.youtube.com/watch?v=aUW5GAFhu6s&t=137s
 
 ## Licentie
 
