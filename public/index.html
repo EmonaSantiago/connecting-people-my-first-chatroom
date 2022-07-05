@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatroom</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatroom</title>
+  <link rel="stylesheet" href="/public/style.css">
 </head>
 
 <body>
-    <main>
-        <section id="header">
-            <h1>Welcome in the Chat!</h1>
-        </section>
 
-        <section id="chatroom">
-            <ul></ul>
-        </section>
+  <main>
+    <section>
+      <img src="https://www.oba.nl/dam/OBA%20huisstijl%20en%20logo/oba-logo-kort-rood-hp.jpg.rendition.384.614.jpeg" width="100em">
+     <h1>book recommandations?</h1>
+      <ul></ul>
+      <form>
+        <input type="text" autocomplete="off">
+        <button><span>Send</span></button>
+      </form>
+    </section>
+  </main>
 
-        <input type="text" autocomplete="off" placeholder="Say something...">
-                <button><span>Send</span></button>
-       
-    </main>
-<script src="./script.js"></script>
-<script src="./server.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/script.js"></script>
 </body>
+
 </html>

@@ -1,25 +1,44 @@
-const { Console } = require('console')
-const { Socket } = require('dgram')
+/*
+https://socket.io/get-started/chat
+*/
+const { ifError } = require('assert')
 const express = require('express')
 const app = express()
 const http = require('http').createServer(app)
 const path = require('path')
 const io = require('socket.io')(http)
+const port = process.env.PORT || 4242
+
+// Start het longpolling proces, geef io mee
+// setInterval(callApi, 2500, io)
+
+// const historySize = 50
+// let history = []
 
 app.use(express.static(path.resolve('public')))
 
-io.on('connection', (Socket) => {
-    Console.log ('a user connected')
+io.on('connection', (socket) => {
+  console.log('a user connected')
+  // io.emit('history', history)
 
-    Socket.on ('message', (message) => {
-        io.emit('message', message)
-    })
+  socket.on('message', (message) => {
+    // while (history.length > historySize) {
+    //   history.shift()
+    // }
+    // history.push(message)
 
-    Socket.on('disconnect', () => {
-        console.log('user disconnected')
-    })
+    io.emit('message', message)
+  })
+
+  socket.on('disconnect', () => {
+    console.log('user disconnected')
+  })
 })
 
-http.listen(4242, () => {
-    console.log('listening on 4242')
+// function callApi(io) {
+//   io.emit('message', 'whatever')
+// }
+
+http.listen(port, () => {
+  console.log('listening on port ', port)
 })
